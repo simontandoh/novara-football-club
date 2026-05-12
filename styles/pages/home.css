@@ -6,7 +6,7 @@
   font-family: var(--font-b);
   font-weight: 300;
   overflow-x: hidden;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 .page-home nav {
@@ -155,7 +155,7 @@
 
 /* HERO */
 .page-home .hero {
-  min-height: 100vh;
+  min-height: 100svh;
   position: relative;
   display: flex;
   align-items: flex-end;
