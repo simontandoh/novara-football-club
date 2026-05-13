@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { FootballNav } from "@/components/football/football-nav";
 import { FooterHome } from "@/components/football/footer-home";
+import { HeroViewportHeightLock } from "@/components/football/hero-viewport-height-lock";
 import { HomeScrollEffects } from "@/components/football/home-scroll-effects";
 import { Ticker } from "@/components/football/ticker";
 
@@ -24,6 +25,7 @@ export default function HomePage() {
       <Ticker />
 
       <section className="hero">
+        <HeroViewportHeightLock />
         <Image
           className="hero-img"
           src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=1920&q=85&fit=crop&crop=center"

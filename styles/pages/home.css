@@ -852,17 +852,25 @@
 
   .page-home .hero {
     padding: 130px 20px 60px;
-    min-height: 100vh;
-    height: 100vh;
+    /* Pixel height from HeroViewportHeightLock — avoids vh/svh reflow when iOS chrome moves */
+    height: var(--hero-viewport-px, 100dvh);
+    min-height: var(--hero-viewport-px, 100dvh);
+    max-height: var(--hero-viewport-px, 100dvh);
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .page-home .hero-img {
     will-change: auto;
     -webkit-transform: none;
     transform: none;
+    inset: 0 !important;
+    width: 100% !important;
     height: 100% !important;
-    top: 0 !important;
-    bottom: 0 !important;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
   }
 
   .page-home #news,
